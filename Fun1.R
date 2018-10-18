@@ -1,4 +1,8 @@
 polutantmean<-function(directory,polutant,id){
+        if(!require(readr)){install.packages('readr')}
+        if(!require(magrittr)){install.packages('magrittr')}
+        if(!require(dplyr)){install.packages('dplyr')}
+        if(!require(tidyr)){install.packages('tidyr')}
         directory<-directory
         setwd(directory)
         temp<-dir(pattern = '*.csv')
