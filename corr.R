@@ -1,4 +1,4 @@
-corr<-function(directory,threshold=0){
+corr<-function(directory,threshold=sample(1:250,1)){
         if(!require(readr)){install.packages('readr')}
         if(!require(magrittr)){install.packages('magrittr')}
         if(!require(dplyr)){install.packages('dplyr')}
@@ -15,6 +15,6 @@ corr<-function(directory,threshold=0){
         }))
         
 }
-comp<-corr(directory = 'D:/mo2men/R/data sets/specdata')
+comp<-corr(directory = choose.dir())
 
 summary(comp)
