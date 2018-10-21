@@ -46,4 +46,6 @@ best<-function(df,state,outcome){
         data4<-data4%>%arrange()
         print(data4)
 }
+
+#Example
 best(df = outcome,state = 'NY',outcome = 'Pneumonia')
