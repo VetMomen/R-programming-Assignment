@@ -28,7 +28,6 @@ outcome%>%ggplot(aes(x=Heart_Attack_rate))+
 
 best<-function(df,state,outcome){
         sat<-unique(df$state)
-        out<-c('Heart Attack','Heart Failure','Pneumonia')
         if(any(state==sat)){
                 data1<-df[df$state==state,]
                 data2<-data1%>%select("Hospital_name","state","Heart_Attack_rate","Heart_Failure_rate",
