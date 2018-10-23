@@ -1,3 +1,10 @@
+library(magrittr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(readr)
+
+
 outcome<-read_csv(file = 'D:/mo2men/R/data sets/Hospitals/outcome-of-care-measures.csv',
                   col_types = 'ccccccccccncnnncncnnncncnnncncnnncncnnncncnnnc')
 
